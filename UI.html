@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://localhost:8080/newcrudp/StudentSave -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Insert title here</title>
+<style>
+a {
+  text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+<h1>Welcome Home</h1>
+
+
+<form action="http://localhost:8080/newcrudp/StudentSave" method="post">
+<input type="text" placeholder="Enter ID" name="id">
+<br><br>
+<input type="text" placeholder="Enter Name" name="name">
+<br><br>
+<input type="text" placeholder="Enter Marks" name="marks">
+<br><br>
+<input type="text" placeholder="Enter Phone Number" name="phone">
+<br><br>
+<input type="text" placeholder="Enter Phone Number" name="phone">
+<br><br>
+<input class="form-check-input" type="radio" name="gender" id="gender" value="male">
+<label class="form-check-label" for="gender">Male</label>
+<input class="form-check-input" type="radio" name="gender" id="gender-f" value="female">
+<label class="form-check-label" for="female">Female</label>
+<br><br>
+<label for="city">Select a city:</label>
+                <select class="form-select" aria-label="City select menu" name="city" id="city">
+                    <option selected="">Open this select menu</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Nagpur">Nagpur</option>
+                </select>
+<br><br>
+
+<input type="submit" placeholder="Submit">
+<br><br>
+
+</form>     
+
+<br>
+<button><a href="http://localhost:8080/newcrudp/StudentSave" text-decoration:="" "none"="">Show List</a></button>
+
+
+		<h2>Student List</h2>
+		<br>
+		<table border="1" cellspacing="0" cellpadding="10">
+		<tbody><tr>
+			<th>ID</th>
+			<th>NAME</th>
+			<th>MARKS</th>
+			<th>PHONE</th>
+			<th>GENDER</th>
+			<th>CITY</th>
+			<th>ACTION1</th>
+			<th>ACTION2</th>
+		</tr>
+		
+					
+					<tr>
+						<td>1</td>
+						<td>Aryan</td>
+						<td>85.5</td>   
+						<td>1234567890</td>
+						<td>male</td>
+						<td>Mumbai</td>
+						<td><a href="http://localhost:8080/newcrudp/DeleteStudent?id=1">Delete</a></td>
+						<td><a href="http://localhost:8080/newcrudp/UpdateStudent?id=1">Update</a></td>
+					</tr>
+					
+					
+					<tr>
+						<td>26</td>
+						<td>Ayush</td>
+						<td>90.0</td>   
+						<td>514533</td>
+						<td>male</td>
+						<td>Pune</td>
+						<td><a href="http://localhost:8080/newcrudp/DeleteStudent?id=26">Delete</a></td>
+						<td><a href="http://localhost:8080/newcrudp/UpdateStudent?id=26">Update</a></td>
+					</tr>
+					
+		
+		</tbody></table>
+		
+
+
+</body></html>
